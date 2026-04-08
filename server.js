@@ -6,7 +6,7 @@ const socketIo = require('socket.io');
 const jwt = require('jsonwebtoken');
 
 
-const leaveRequestRoutes = require('./routes/leaveRequests');
+const leaveRequestRoutes = require('./routes/leaverequests');
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/users');
 const requestRoutes = require('./routes/requests');
@@ -17,7 +17,7 @@ require('dotenv').config();
 
 const app = express();
 const server = http.createServer(app);
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 30001;
 
 // Socket.IO configuration
 const io = socketIo(server, {
